@@ -12,6 +12,7 @@ struct ContentView: View {
         VStack {
             Text("スクラッチくじアプリ")
                 .font(.title)
+                .fontWeight(.bold)
         }
     }
 }
