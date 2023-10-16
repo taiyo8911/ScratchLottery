@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA40A1C82A48764E00E3AB98 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA40A1C72A48764E00E3AB98 /* MainView.swift */; };
+		DA876E382A5F7E3500456EB2 /* CountChallengeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA876E372A5F7E3500456EB2 /* CountChallengeView.swift */; };
+		DAB14DC82A59330300E792C7 /* HappyCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB14DC72A59330300E792C7 /* HappyCountView.swift */; };
 		DAD938412A48536300E0A221 /* ScratchLotteryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD938402A48536300E0A221 /* ScratchLotteryApp.swift */; };
 		DAD938432A48536300E0A221 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD938422A48536300E0A221 /* ContentView.swift */; };
 		DAD938452A48536400E0A221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAD938442A48536400E0A221 /* Assets.xcassets */; };
@@ -14,6 +17,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA40A1C72A48764E00E3AB98 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		DA7E40182A4AAAD7008E8960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DA876E372A5F7E3500456EB2 /* CountChallengeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountChallengeView.swift; sourceTree = "<group>"; };
+		DAB14DC72A59330300E792C7 /* HappyCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappyCountView.swift; sourceTree = "<group>"; };
 		DAD9383D2A48536200E0A221 /* ScratchLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScratchLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAD938402A48536300E0A221 /* ScratchLotteryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchLotteryApp.swift; sourceTree = "<group>"; };
 		DAD938422A48536300E0A221 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +61,10 @@
 			children = (
 				DAD938402A48536300E0A221 /* ScratchLotteryApp.swift */,
 				DAD938422A48536300E0A221 /* ContentView.swift */,
+				DA40A1C72A48764E00E3AB98 /* MainView.swift */,
+				DAB14DC72A59330300E792C7 /* HappyCountView.swift */,
+				DA876E372A5F7E3500456EB2 /* CountChallengeView.swift */,
+				DA7E40182A4AAAD7008E8960 /* Info.plist */,
 				DAD938442A48536400E0A221 /* Assets.xcassets */,
 				DAD938462A48536400E0A221 /* ScratchLottery.entitlements */,
 				DAD938472A48536400E0A221 /* Preview Content */,
@@ -139,7 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA876E382A5F7E3500456EB2 /* CountChallengeView.swift in Sources */,
 				DAD938432A48536300E0A221 /* ContentView.swift in Sources */,
+				DA40A1C82A48764E00E3AB98 /* MainView.swift in Sources */,
+				DAB14DC82A59330300E792C7 /* HappyCountView.swift in Sources */,
 				DAD938412A48536300E0A221 /* ScratchLotteryApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +283,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScratchLottery/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -287,7 +302,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = macya.dev.ScratchLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,6 +324,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScratchLottery/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -325,7 +343,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = macya.dev.ScratchLottery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

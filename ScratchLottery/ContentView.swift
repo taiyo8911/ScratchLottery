@@ -9,11 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("スクラッチくじアプリ")
-                .font(.title)
-                .fontWeight(.bold)
-        }
+        MainView()
     }
 }
 
