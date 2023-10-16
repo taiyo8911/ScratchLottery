@@ -12,7 +12,7 @@ struct MainView: View {
         NavigationView {
             VStack {
                 NavigationLink(destination: HappyCountView()) {
-                    Text("ハッピーカウント改")
+                    Text("ハッピーカウント")
                         .foregroundColor(.white)
                         .frame(width: 200, height: 50)
                         .background(Color.blue)
